@@ -1,16 +1,16 @@
+var data = "%data%";
 var bio = {
 	"name": "Robin Joganah",
 	"role": "Software Developer",
-	"contact_info":{ 
+	"contacts":{ 
 		"email" : "robin.joganah.1@ulaval.ca",
 		"mobile" : "+1 418-271-9541",
 		"twitter" : "robinjo",
 		"github" : "rjoganah",
-		"blog" : "www.robinjoganah.com",
 		"location" : "Quebec-City"
 	},
-	"url_image": "images/fry.jpg",
-	"welcome_message": "Graduate Student looking for opportunities in High-Tech Companies",
+	"biopic": "images/me.jpeg",
+	"welcomeMessage": "Graduate Student looking for opportunities in High-Tech Companies",
 	"skills": [
 		"Python",
 		"C#",
@@ -21,73 +21,73 @@ var bio = {
 };
 
 var work = {
-	"jobs": [
-	{
-	"position" : "Research Assistant",
+	"jobs": [{
+	"title" : "Research Assistant",
 	"employer" : "Laval University",
 	"dates" : "From January 2015",
-	"loc" : "Quebec-City, Canada",
-	"desc" : "Natural Language Processing, Information Retrieval, Machine Learning"
+	"location" : "Quebec-City, Canada",
+	"description" : "Natural Language Processing, Information Retrieval, Machine Learning"
 	},
 	{
-	"position" : "Software Developer Intern",
+	"title" : "Software Developer Intern",
 	"employer" : "IT-CE",
 	"dates" : "April 2014-August 2014",
-	"loc" : "Paris, France",
-	"desc" : "C# Asp.Net - Risk tool"
+	"location" : "Paris, France",
+	"description" : "C# Asp.Net - Risk tool"
 	},
 	{
-	"position" : "Front-End & Software Developer Intern",
+	"title" : "Front-End & Software Developer Intern",
 	"employer" : "Ortho Clinical Diagnostics",
 	"dates" : "July 2013-August 2013",
-	"loc" : "Illkirch-Graffentstaden, France",
-	"desc" : "HTML/CSS/Javascript Front-End Dashboard - Reporting Tool software with VBA"
+	"location" : "Illkirch-Graffentstaden, France",
+	"description" : "HTML/CSS/Javascript Front-End Dashboard - Reporting Tool software with VBA"
 	},
 	{
-	"position" : "Software Developer Intern",
+	"title" : "Software Developer Intern",
 	"employer" : "Caisse d'Epargne",
 	"dates" : "June 2012-August 2012",
-	"loc" : "Strasbourg, France",
-	"desc" : "VBA Software reporting tool - Saved 20 man-days / year"
+	"location" : "Strasbourg, France",
+	"description" : "VBA Software reporting tool - Saved 20 man-days / year"
 	}
 	]
 };
 
 var education = {
-	"schools":[
-	{
+	"schools": [{
 	"degree" : "Master of Science",
 	"name" : "Laval University",
-	"loc" : "Quebec-City, QC, Canada",
-	"dates" : "2014-2016",
-	"majors" : ["Computer Science","Natural Language Processing"]
+	"location" : "Quebec-City, QC, Canada",
+	"dates" : 2016,
+	"majors" : ["Computer Science","Natural Language Processing"],
+	"url" : "http://www.ulaval.ca"
 	},
 	{
 	"degree" : "Engineer's degree",
 	"name" : "ECE Paris Graduate School of Engineering",
-	"loc" : "Paris, IDF, France",
-	"dates" : "2010-2016",
-	"majors" : ["Information systems"]
+	"location" : "Paris, IDF, France",
+	"dates" : 2016,
+	"majors" : ["Information systems"],
+	"url" : "http://www.ece.fr"
 	}
 	,
 	{
 	"degree" : "Evening Classes",
 	"name" : "Conservatoire National Des Arts et Métiers (CNAM)",
-	"loc" : "Paris, IDF, France",
-	"dates" : "2013-2014",
-	"majors" : ["Machine Learning","Data Mining"]
+	"location" : "Paris, IDF, France",
+	"dates" : 2014,
+	"majors" : ["Machine Learning","Data Mining"],
+	"url" : "http://www.cnam.fr"
 	}
 	],
-	"onlineClass" : [
-	{
-		"degree" : "Front-End Developer Nanodegree",
-		"name" : "Udacity",
+	"onlineClass" : [{
+		"title" : "Front-End Developer Nanodegree",
+		"school" : "Udacity",
 		"dates" : "2015-2016",
 		"url" : "https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001"
 	},
 	{
-		"degree" : "Full-Stack Developer Nanodegree",
-		"name" : "Udacity",
+		"title" : "Full-Stack Developer Nanodegree",
+		"school" : "Udacity",
 		"dates" : "2015-2016",
 		"url" : "https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004"
 	}
@@ -101,43 +101,57 @@ var projects = {
 		"title": "Dynamic Information Retrieval (Research presented at Text REtrieval Conference (TREC) 2015, Gaithersburg, MD)",
 		"dates": "2015",
 		"description":"Information retrieval through many irrelevant/unjudged documents. We take user's feedback into account to chose a direction to search more documents and cover user's different interests about the subject. (Python)",
-		"url" : "www.medicbag.ovh"
+		"url" : "www.medicbag.ovh",
+		"images" : ["images/medicbag.png"]
 	},
 	{
 		"title": "Question Classification",
 		"dates": "2015",
 		"description":"Question classification using ensemble methods (Adaboost, Bagging), results are similar to the litterature. (Python)",
-		"url" : "www.medicbag.ovh"
+		"url" : "www.medicbag.ovh",
+		"images" : ["images/medicbag.png"]
 	},
 	
 	{
 		"title": "Adaptive Chartist Pattern Detection Tool (Research presented at ICBEIT 2014, Singapore)",
 		"dates": "2014",
 		"description": "Pattern Detection for financials markets, study of corrleation and forecast of the market with Neural Networks. (C#)",
-		"url" : "www.medicbag.ovh"
+		"url" : "www.medicbag.ovh",
+		"images" : ["images/medicbag.png"]
 	},
 	{
 		"title": "MedicBag",
 		"dates": "2013",
 		"description":"Social network between Doctors and Patients (PHP)",
-		"url" : "www.medicbag.ovh"
+		"url" : "www.medicbag.ovh",
+		"images" : ["images/medicbag.png"]
 	}
 	]
 };
 
 bio.display = function(){
-	formattedHTMLbioPic = HTMLbioPic.replace("%data%",bio.url_image);
-	formattedHTMLwelcomeMessage = HTMLwelcomeMsg.replace("%data%",bio.welcome_message);
+	var formattedName = HTMLheaderName.replace(data,bio.name);
+ 	var formattedRole = HTMLheaderRole.replace(data,bio.role);
+	$("#header").prepend(formattedRole);
+	$("#header").prepend(formattedName);
+	formattedHTMLbioPic = HTMLbioPic.replace(data,bio.biopic);
+	formattedHTMLwelcomeMessage = HTMLwelcomeMsg.replace(data,bio.welcomeMessage);
 	$("#header").append(formattedHTMLbioPic + formattedHTMLwelcomeMessage);
-	// $("#header").append(HTMLcontactGeneric);
-	formattedHTMLmobile = HTMLmobile.replace("%data%",bio.contact_info.mobile);
-	formattedHTMLemail = HTMLemail.replace("%data%",bio.contact_info.email);
-	formattedHTMLtwitter = HTMLtwitter.replace("%data%",bio.contact_info.twitter);
-	formattedHTMLblog = HTMLblog.replace("%data%",bio.contact_info.blog);
-	formattedHTMLgithub = HTMLgithub.replace("%data%",bio.contact_info.github);
-	formattedHTMLlocation = HTMLlocation.replace("%data%",bio.contact_info.location);
+	formattedHTMLmobile = HTMLmobile.replace(data,bio.contacts.mobile);
+	formattedHTMLemail = HTMLemail.replace(data,bio.contacts.email);
+	formattedHTMLtwitter = HTMLtwitter.replace(data,bio.contacts.twitter);
+	formattedHTMLblog = HTMLblog.replace(data,bio.contacts.blog);
+	formattedHTMLgithub = HTMLgithub.replace(data,bio.contacts.github);
+	formattedHTMLlocation = HTMLlocation.replace(data,bio.contacts.location);
 
 	$("#topContacts").append(formattedHTMLmobile + formattedHTMLemail +  formattedHTMLgithub + formattedHTMLtwitter + formattedHTMLlocation  );
+	if(bio.skills.length > 0){
+		$("#header").append(HTMLskillsStart);
+		for(skill in bio.skills){
+			var formattedSkill =  HTMLskills.replace(data,bio.skills[skill]);
+			$("#skills").append(formattedSkill);
+		};	
+	}
 
 }
 
@@ -145,56 +159,59 @@ bio.display = function(){
 
 
 
-var displayWork = function(work){
-	for(job in work["jobs"]){
+work.displayWork = function(){
+	work.jobs.forEach(function(job){
 		$("#workExperience").append(HTMLworkStart);
-		var formattedEmployer = HTMLworkEmployer.replace("%data%",work.jobs[job].employer);
-		var formattedJobTitle = HTMLworkTitle.replace("%data%",work.jobs[job].position);
-		var formattedDate = HTMLworkDates.replace("%data%",work.jobs[job].dates);
-		var formattedLocation = HTMLworkLocation.replace("%data%",work.jobs[job].loc);
-		var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].desc);
+		var formattedEmployer = HTMLworkEmployer.replace(data,job.employer);
+		var formattedJobTitle = HTMLworkTitle.replace(data,job.title);
+		var formattedDate = HTMLworkDates.replace(data,job.dates);
+		var formattedLocation = HTMLworkLocation.replace(data,job.location);
+		var formattedDescription = HTMLworkDescription.replace(data, job.description);
 		$(".work-entry:last").append(formattedEmployer + formattedJobTitle + formattedDate + formattedLocation + formattedDescription);
+	});
 
-	}
 };
 
 projects.display = function(){
-	
-	
-	for(project in projects.projects){
+	var count = 0;
+	projects.projects.forEach(function(project){
 		$("#projects").append(HTMLprojectStart);
-		var formattedProjectTitle = HTMLprojectTitle.replace("%data%",projects.projects[project].title);
-		var formattedProjectDates = HTMLprojectDates.replace("%data%",projects.projects[project].dates);
-		var formattedProjectDescription = HTMLprojectDescription.replace("%data%",projects.projects[project].description);
-		var formattedProjectImage = HTMLprojectImage.replace("%data%","images/medicbag.png");
+		var formattedProjectTitle = HTMLprojectTitle.replace(data,project.title);
+		var formattedProjectDates = HTMLprojectDates.replace(data,project.dates);
+		var formattedProjectDescription = HTMLprojectDescription.replace(data,project.description);
+		var formattedProjectImage = HTMLprojectImage.replace(data,project.images);
 		$(".project-entry:last").append(formattedProjectTitle + formattedProjectDates + formattedProjectDescription + formattedProjectImage);
-		if(project > 0){
+		if(count > 0){
 			$(".project-entry:last").hide();
 		}
-	}
+		count++;
+	});
+	
 	
 };
 
 
 education.display = function(){
-	$("#education").append(HTMLschoolStart);
-	for(school in education.schools){
-		var formattedHTMLschoolName = HTMLschoolName.replace("%data%", education.schools[school].name);
-		var formattedHTMLschoolDegree = HTMLschoolDegree.replace("%data%", education.schools[school].degree);
-		var formattedHTMLschoolMajors = HTMLschoolMajor.replace("%data%", education.schools[school].majors);
-		var formattedHTMLschoolDates = HTMLschoolDates.replace("%data%", education.schools[school].dates);
-		var formattedHTMLschoolLocation = HTMLschoolLocation.replace("%data%", education.schools[school].loc);
+	
+	education.schools.forEach(function(school){
+		$("#education").append(HTMLschoolStart);
+		var formattedHTMLschoolName = HTMLschoolName.replace(data, school.name);
+		var formattedHTMLschoolDegree = HTMLschoolDegree.replace(data, school.degree);
+		var formattedHTMLschoolMajors = HTMLschoolMajor.replace(data, school.majors);
+		var formattedHTMLschoolDates = HTMLschoolDates.replace(data, school.dates);
+		var formattedHTMLschoolLocation = HTMLschoolLocation.replace(data, school.location);
 		$(".education-entry:last").append(formattedHTMLschoolName + formattedHTMLschoolDegree  + formattedHTMLschoolDates + formattedHTMLschoolLocation + formattedHTMLschoolMajors );
-
-	}
+	});
+	
 	$("#education").append(HTMLonlineClasses);
-	for (onlineC in education.onlineClass ){
-		var formattedHTMLonlineTitle =  HTMLonlineTitle.replace("%data%",education.onlineClass[onlineC].degree);
-		var formattedHTMLonlineSchool = HTMLonlineSchool.replace("%data%",education.onlineClass[onlineC].name);
-		var formattedHTMLonlineDates = HTMLonlineDates.replace("%data%",education.onlineClass[onlineC].dates);
-		var formattedHTMLonlineURL = HTMLonlineURL.replace("%data%",education.onlineClass[onlineC].url);
+	education.onlineClass.forEach(function(onlineC){
+		var formattedHTMLonlineTitle =  HTMLonlineTitle.replace(data,onlineC.title);
+		var formattedHTMLonlineSchool = HTMLonlineSchool.replace(data,onlineC.school);
+		var formattedHTMLonlineDates = HTMLonlineDates.replace(data,onlineC.dates);
+		var formattedHTMLonlineURL = HTMLonlineURL.replace(data,onlineC.url);
 		$(".education-entry:last").append(formattedHTMLonlineTitle + formattedHTMLonlineSchool + formattedHTMLonlineDates + formattedHTMLonlineURL);
-	}
+	});
+
 	
 };
 
@@ -210,8 +227,7 @@ var inName = function(name){
 	lastname = lastname.toUpperCase();
 	return firstname + " " + lastname;
 }
- var formattedName = HTMLheaderName.replace("%data%",bio.name);
- var formattedRole = HTMLheaderRole.replace("%data%",bio.role);
+
 
 
 var slideshow = function(isNext){
@@ -255,17 +271,8 @@ $( "#clickNext" ).click(function() {
   slideshow(true);
 });
 
-$("#header").prepend(formattedRole);
-$("#header").prepend(formattedName);
 bio.display();
-if(bio.skills.length > 0){
-	$("#header").append(HTMLskillsStart);
-	for(skill in bio.skills){
-		var formattedSkill =  HTMLskills.replace("%data%",bio.skills[skill]);
-		$("#skills").append(formattedSkill);
-	};
-}
-displayWork(work);
+work.displayWork();
 projects.display();
 education.display();
 $("#main").append(internationalizeButton);
