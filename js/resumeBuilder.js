@@ -145,6 +145,7 @@ bio.display = function(){
 	formattedHTMLlocation = HTMLlocation.replace(data,bio.contacts.location);
 
 	$("#topContacts").append(formattedHTMLmobile + formattedHTMLemail +  formattedHTMLgithub + formattedHTMLtwitter + formattedHTMLlocation  );
+	$("#footerContacts").append(formattedHTMLmobile + formattedHTMLemail +  formattedHTMLgithub + formattedHTMLtwitter + formattedHTMLlocation );
 	if(bio.skills.length > 0){
 		$("#header").append(HTMLskillsStart);
 		for(skill in bio.skills){
@@ -159,7 +160,7 @@ bio.display = function(){
 
 
 
-work.displayWork = function(){
+work.display = function(){
 	work.jobs.forEach(function(job){
 		$("#workExperience").append(HTMLworkStart);
 		var formattedEmployer = HTMLworkEmployer.replace(data,job.employer);
@@ -272,7 +273,7 @@ $( "#clickNext" ).click(function() {
 });
 
 bio.display();
-work.displayWork();
+work.display();
 projects.display();
 education.display();
 $("#main").append(internationalizeButton);
