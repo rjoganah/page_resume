@@ -13,7 +13,6 @@ var bio = {
 	"skills": [
 		"Python",
 		"C#",
-		"Java",
 		"JavaScript",
 		"HTML/CSS",
 		"Machine Learning",
