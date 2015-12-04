@@ -105,7 +105,7 @@ var projects = {
 		"title": "Dynamic Information Retrieval (Research presented at Text REtrieval Conference (TREC) 2015, Gaithersburg, MD)",
 		"dates": "2015",
 		"description":"Information retrieval through many irrelevant/unjudged documents. We take user's feedback into account to chose a direction to search more documents and cover user's different interests about the subject. (Python)",
-		"url" : "https://github.com/rjoganah/Dynamic_IR",
+		"url" : "http://github.com/rjoganah/Dynamic_IR",
 		"images" : []
 	},
 	{
@@ -120,7 +120,7 @@ var projects = {
 		"title": "Adaptive Chartist Pattern Detection Tool (Research presented at ICBEIT 2014, Singapore)",
 		"dates": "2014",
 		"description": "Pattern Detection for financials markets, study of corrleation and forecast of the market with Neural Networks. (C#)",
-		"url" : "https://github.com/rjoganah/PPE_ChartPatternFinal",
+		"url" : "http://github.com/rjoganah/PPE_ChartPatternFinal",
 		"images" : []
 	},
 	{
