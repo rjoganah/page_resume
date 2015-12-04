@@ -93,7 +93,6 @@ a {
 }
 
 .welcome-message {
-  float:left;
   font-style: italic;
   font-size: 18px;
   color: #000000;
@@ -102,11 +101,9 @@ a {
 }
 
 #skills {
-  clear: both;
 }
 
 #skills-h3 {
-  clear: both;
   color: #1199c3;
   display: none;
 }

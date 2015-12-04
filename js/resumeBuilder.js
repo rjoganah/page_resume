@@ -5,7 +5,6 @@ var bio = {
 	"contacts":{ 
 		"email" : "robin.joganah.1@ulaval.ca",
 		"mobile" : "+1 418-271-9541",
-		"twitter" : "robinjo",
 		"github" : "rjoganah",
 		"location" : "Quebec-City"
 	},
@@ -14,9 +13,14 @@ var bio = {
 	"skills": [
 		"Python",
 		"C#",
-		"Natural Language Processing",
+		"Java",
+		"JavaScript",
 		"HTML/CSS",
-		"JavaScript"
+		"Machine Learning",
+		"Information Retrieval",
+		"Data Mining",
+		"Natural Language Processing"
+				
 	]
 };
 
@@ -101,29 +105,29 @@ var projects = {
 		"title": "Dynamic Information Retrieval (Research presented at Text REtrieval Conference (TREC) 2015, Gaithersburg, MD)",
 		"dates": "2015",
 		"description":"Information retrieval through many irrelevant/unjudged documents. We take user's feedback into account to chose a direction to search more documents and cover user's different interests about the subject. (Python)",
-		"url" : "www.medicbag.ovh",
-		"images" : ["images/medicbag.png"]
+		"url" : "https://github.com/rjoganah/Dynamic_IR",
+		"images" : []
 	},
 	{
 		"title": "Question Classification",
 		"dates": "2015",
 		"description":"Question classification using ensemble methods (Adaboost, Bagging), results are similar to the litterature. (Python)",
-		"url" : "www.medicbag.ovh",
-		"images" : ["images/medicbag.png"]
+		"url" : "",
+		"images" : []
 	},
 	
 	{
 		"title": "Adaptive Chartist Pattern Detection Tool (Research presented at ICBEIT 2014, Singapore)",
 		"dates": "2014",
 		"description": "Pattern Detection for financials markets, study of corrleation and forecast of the market with Neural Networks. (C#)",
-		"url" : "www.medicbag.ovh",
-		"images" : ["images/medicbag.png"]
+		"url" : "https://github.com/rjoganah/PPE_ChartPatternFinal",
+		"images" : []
 	},
 	{
 		"title": "MedicBag",
 		"dates": "2013",
 		"description":"Social network between Doctors and Patients (PHP)",
-		"url" : "www.medicbag.ovh",
+		"url" : "http://www.medicbag.ovh",
 		"images" : ["images/medicbag.png"]
 	}
 	]
@@ -144,8 +148,8 @@ bio.display = function(){
 	formattedHTMLgithub = HTMLgithub.replace(data,bio.contacts.github);
 	formattedHTMLlocation = HTMLlocation.replace(data,bio.contacts.location);
 
-	$("#topContacts").append(formattedHTMLmobile + formattedHTMLemail +  formattedHTMLgithub + formattedHTMLtwitter + formattedHTMLlocation  );
-	$("#footerContacts").append(formattedHTMLmobile + formattedHTMLemail +  formattedHTMLgithub + formattedHTMLtwitter + formattedHTMLlocation );
+	$("#topContacts").append(formattedHTMLmobile + formattedHTMLemail +  formattedHTMLgithub  + formattedHTMLlocation  );
+	$("#footerContacts").append(formattedHTMLmobile + formattedHTMLemail +  formattedHTMLgithub  + formattedHTMLlocation );
 	if(bio.skills.length > 0){
 		$("#header").append(HTMLskillsStart);
 		for(skill in bio.skills){
@@ -177,11 +181,12 @@ projects.display = function(){
 	var count = 0;
 	projects.projects.forEach(function(project){
 		$("#projects").append(HTMLprojectStart);
+		var formattedProjectURL = HTMLprojectURL.replace(data,project.url);
 		var formattedProjectTitle = HTMLprojectTitle.replace(data,project.title);
 		var formattedProjectDates = HTMLprojectDates.replace(data,project.dates);
 		var formattedProjectDescription = HTMLprojectDescription.replace(data,project.description);
 		var formattedProjectImage = HTMLprojectImage.replace(data,project.images);
-		$(".project-entry:last").append(formattedProjectTitle + formattedProjectDates + formattedProjectDescription + formattedProjectImage);
+		$(".project-entry:last").append(formattedProjectURL + formattedProjectTitle + formattedProjectDates + formattedProjectDescription + formattedProjectImage);
 		if(count > 0){
 			$(".project-entry:last").hide();
 		}
